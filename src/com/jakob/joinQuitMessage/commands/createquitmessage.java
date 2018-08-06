@@ -7,9 +7,7 @@ import org.bukkit.entity.Player;
 import ru.tehkode.permissions.bukkit.PermissionsEx;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
 
 public class createquitmessage implements CommandExecutor {
 
@@ -30,6 +28,8 @@ public class createquitmessage implements CommandExecutor {
                         for (String s : args) {
                             out += s + " ";
                         }
+                        String playerMessage = out.replace("&", "§").replace("@p", p.getDisplayName());
+                        p.sendMessage("Die quit Message ist jetzt: " + playerMessage);
                         writer.write(out);
                         writer.close();
                     } catch (Exception e) {
