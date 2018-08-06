@@ -30,6 +30,11 @@ public class createjoinmessage implements CommandExecutor {
                     File file = new File(directory.getPath() + "\\join.txt");
                     try {
                         String out = "";
+                        if(!args[args.length-1].contains("&"))
+                        {
+                            p.sendMessage("Es muss 'text &colorcode' als text genommen werden! (@p ist der Username)");
+                            return false;
+                        }
                         String color = args[args.length - 1].replace("&", "").trim();
                         char colorChar = color.charAt(0);
                         if(!((colorChar >= '0' && colorChar <= '9') || (colorChar >= 'a' && colorChar <= 'f')))

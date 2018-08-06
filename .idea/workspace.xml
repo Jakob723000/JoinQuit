@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9da0fa5-9cd8-4728-b64d-b2978228f906" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/jakob/joinQuitMessage/listener/JoinQuitHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jakob/joinQuitMessage/listener/JoinQuitHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jakob/joinQuitMessage/commands/createjoinmessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jakob/joinQuitMessage/commands/createjoinmessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jakob/joinQuitMessage/commands/createquitmessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jakob/joinQuitMessage/commands/createquitmessage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createjoinmessage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="createjoinmessage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jakob/joinQuitMessage/commands/createjoinmessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="22" column="97" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="97" />
+            <state relative-caret-position="428">
+              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JoinQuitHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JoinQuitHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jakob/joinQuitMessage/listener/JoinQuitHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="64" column="87" selection-start-line="64" selection-start-column="87" selection-end-line="64" selection-end-column="87" />
+            <state relative-caret-position="530">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,8 +68,8 @@
       <file leaf-file-name="createquitmessage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jakob/joinQuitMessage/commands/createquitmessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="374">
+              <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="35" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,10 +103,10 @@
         <option value="$PROJECT_DIR$/src/com/jakob/joinQuittMessage/commands/createjoinmessage.java" />
         <option value="$PROJECT_DIR$/src/com/jakob/joinQuittMessage/listener/JoinQuitHandler.java" />
         <option value="$PROJECT_DIR$/src/plugin.yml" />
-        <option value="$PROJECT_DIR$/src/com/jakob/joinQuitMessage/commands/createjoinmessage.java" />
-        <option value="$PROJECT_DIR$/src/com/jakob/joinQuitMessage/commands/createquitmessage.java" />
         <option value="$PROJECT_DIR$/src/com/jakob/joinQuitMessage/main/Main.java" />
         <option value="$PROJECT_DIR$/src/com/jakob/joinQuitMessage/listener/JoinQuitHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/jakob/joinQuitMessage/commands/createquitmessage.java" />
+        <option value="$PROJECT_DIR$/src/com/jakob/joinQuitMessage/commands/createjoinmessage.java" />
       </list>
     </option>
   </component>
@@ -252,12 +253,12 @@
       <updated>1533547388704</updated>
       <workItem from="1533547393124" duration="1301000" />
       <workItem from="1533550575439" duration="3630000" />
-      <workItem from="1533559997181" duration="864000" />
+      <workItem from="1533559997181" duration="1234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5795000" />
+    <option name="totallyTimeSpent" value="6165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -395,20 +396,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jakob/joinQuitMessage/commands/createjoinmessage.java">
+    <entry file="jar://$USER_HOME$/Documents/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar!/org/bukkit/event/player/PlayerJoinEvent.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="22" column="97" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="14" column="66" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jakob/joinQuitMessage/commands/createquitmessage.java">
+    <entry file="file://$PROJECT_DIR$/src/com/jakob/joinQuitMessage/listener/JoinQuitHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="530">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -425,17 +423,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar!/org/bukkit/event/player/PlayerJoinEvent.class">
+    <entry file="file://$PROJECT_DIR$/src/com/jakob/joinQuitMessage/commands/createquitmessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="66" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="66" />
+        <state relative-caret-position="374">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="35" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jakob/joinQuitMessage/listener/JoinQuitHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/jakob/joinQuitMessage/commands/createjoinmessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="64" column="87" selection-start-line="64" selection-start-column="87" selection-end-line="64" selection-end-column="87" />
+        <state relative-caret-position="428">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
