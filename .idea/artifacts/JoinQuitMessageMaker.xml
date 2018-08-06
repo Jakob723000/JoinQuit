@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JoinQuitMessageMaker">
+    <output-path>$PROJECT_DIR$/out/artifacts/JoinQuitMessageMaker</output-path>
+    <root id="archive" name="JoinQuitMessageMaker.jar">
+      <element id="module-output" name="JoinQuitMessageMaker" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,11 @@
+main: com.jakob.joinQuitMessage.main.Main
+name: JoinQuitMessageMaker
+version: 1.0
+author: Jakob
+depend: [PermissionsEx]
+
+commands:
+  createjoinmessage:
+    aliases: [createjoinmessage, cjm]
+  createquitmessage:
+    aliases: [createquittmessage, cqm]
