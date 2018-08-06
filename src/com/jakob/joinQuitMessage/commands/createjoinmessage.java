@@ -24,9 +24,6 @@ public class createjoinmessage implements CommandExecutor {
                     // args in datei speichern
                     String path = System.getProperty("user.dir");
                     File directory = new File(path + "\\plugins\\joinQuitMessageMaker");
-                    if (!directory.exists()) {
-                        new File(directory.getPath()).mkdir();
-                    }
                     File file = new File(directory.getPath() + "\\join.txt");
                     try {
                         String out = "";
@@ -48,10 +45,8 @@ public class createjoinmessage implements CommandExecutor {
                         }
                         writer.write(out);
                         writer.close();
-                    } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                    } catch (UnsupportedEncodingException e) {
-                        e.printStackTrace();
+                    } catch (Exception e) {
+                        p.sendMessage("Es muss 'text &colorcode' als text genommen werden! (@p ist der Username)");
                     }
                 }
             }
