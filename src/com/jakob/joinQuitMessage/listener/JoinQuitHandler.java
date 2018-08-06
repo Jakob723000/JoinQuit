@@ -15,6 +15,7 @@ public class JoinQuitHandler implements Listener {
         String path = System.getProperty("user.dir");
         String fileName = path + "\\plugins\\joinQuitMessageMaker\\join.txt";
 
+        System.out.println(fileName);
         String line = null;
 
         try {
@@ -26,9 +27,7 @@ public class JoinQuitHandler implements Listener {
             BufferedReader bufferedReader =
                     new BufferedReader(fileReader);
 
-            while ((line = bufferedReader.readLine()) != null) {
-                System.out.println(line);
-            }
+            line = bufferedReader.readLine();
 
             // Always close files.
             bufferedReader.close();
@@ -36,7 +35,7 @@ public class JoinQuitHandler implements Listener {
             pje.setJoinMessage(pje.getPlayer().getDisplayName() + " ist gejoint");
         }
         line = line.replace("@p", pje.getPlayer().getDisplayName());
-        pje.setJoinMessage(String.format("§%c %s", line.charAt(line.length() - 1), line.substring(0, line.length() - 3)));
+        pje.setJoinMessage(String.format("§%c %s", line.charAt(line.length() - 2), line.substring(0, line.length() - 3)));
     }
 
     @EventHandler
@@ -55,9 +54,7 @@ public class JoinQuitHandler implements Listener {
             BufferedReader bufferedReader =
                     new BufferedReader(fileReader);
 
-            while ((line = bufferedReader.readLine()) != null) {
-                System.out.println(line);
-            }
+            line = bufferedReader.readLine();
 
             // Always close files.
             bufferedReader.close();
@@ -65,7 +62,7 @@ public class JoinQuitHandler implements Listener {
             pqe.setQuitMessage(pqe.getPlayer().getDisplayName() + " ist geleavt");
         }
         line = line.replace("@p", pqe.getPlayer().getDisplayName());
-        pqe.setQuitMessage(String.format("§%c %s", line.charAt(line.length() - 1), line.substring(0, line.length() - 3)));
+        pqe.setQuitMessage(String.format("§%c %s", line.trim().charAt(line.length() - 2), line.trim().substring(0, line.length() - 3)));
     }
 
 
