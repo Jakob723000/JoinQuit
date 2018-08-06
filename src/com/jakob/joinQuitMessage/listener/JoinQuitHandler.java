@@ -34,8 +34,9 @@ public class JoinQuitHandler implements Listener {
         } catch (Exception ex) {
             pje.setJoinMessage(pje.getPlayer().getDisplayName() + " ist gejoint");
         }
+        line = line.replace("&", "§");
         line = line.replace("@p", pje.getPlayer().getDisplayName());
-        pje.setJoinMessage(String.format("§%c %s", line.charAt(line.length() - 2), line.substring(0, line.length() - 3)));
+        pje.setJoinMessage(line);
     }
 
     @EventHandler
@@ -61,8 +62,9 @@ public class JoinQuitHandler implements Listener {
         } catch (Exception ex) {
             pqe.setQuitMessage(pqe.getPlayer().getDisplayName() + " ist geleavt");
         }
+        line = line.replace("&", "§");
         line = line.replace("@p", pqe.getPlayer().getDisplayName());
-        pqe.setQuitMessage(String.format("§%c %s", line.trim().charAt(line.length() - 2), line.trim().substring(0, line.length() - 3)));
+        pqe.setQuitMessage(line);
     }
 
 
