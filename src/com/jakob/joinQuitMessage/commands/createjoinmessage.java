@@ -29,8 +29,17 @@ public class createjoinmessage implements CommandExecutor {
                         for (String s : args) {
                             out += s + " ";
                         }
-                        String playerMessage = out.replace("&", "§").replace("@p", p.getDisplayName());
-                        p.sendMessage("Die join Message ist jetzt: " + playerMessage);
+
+                        if(out.trim().equalsIgnoreCase("null"))
+                        {
+                            p.sendMessage("Die join Message wird nicht angezeigt");
+                        }
+                        else
+                        {
+                            String playerMessage = out.replace("&", "§").replace("@p", p.getDisplayName());
+                            p.sendMessage("Die join Message ist jetzt: " + playerMessage);
+                        }
+
                         writer.write(out);
                         writer.close();
                     } catch (Exception e) {

@@ -29,14 +29,22 @@ public class JoinQuitHandler implements Listener {
 
             line = bufferedReader.readLine();
 
+
             // Always close files.
             bufferedReader.close();
         } catch (Exception ex) {
             pje.setJoinMessage(pje.getPlayer().getDisplayName() + " ist gejoint");
         }
-        line = line.replace("&", "§");
-        line = line.replace("@p", pje.getPlayer().getDisplayName());
-        pje.setJoinMessage(line);
+        if(line.trim().equalsIgnoreCase("null"))
+        {
+            pje.setJoinMessage("");
+        }
+        else
+        {
+            line = line.replace("&", "§");
+            line = line.replace("@p", pje.getPlayer().getDisplayName());
+            pje.setJoinMessage(line);
+        }
     }
 
     @EventHandler
@@ -57,14 +65,22 @@ public class JoinQuitHandler implements Listener {
 
             line = bufferedReader.readLine();
 
+
             // Always close files.
             bufferedReader.close();
         } catch (Exception ex) {
             pqe.setQuitMessage(pqe.getPlayer().getDisplayName() + " ist geleavt");
         }
-        line = line.replace("&", "§");
-        line = line.replace("@p", pqe.getPlayer().getDisplayName());
-        pqe.setQuitMessage(line);
+        if(line.trim().equalsIgnoreCase("null"))
+        {
+            pqe.setQuitMessage("");
+        }
+        else
+        {
+            line = line.replace("&", "§");
+            line = line.replace("@p", pqe.getPlayer().getDisplayName());
+            pqe.setQuitMessage(line);
+        }
     }
 
 

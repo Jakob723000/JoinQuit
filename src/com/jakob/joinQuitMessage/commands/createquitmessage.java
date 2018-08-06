@@ -28,8 +28,13 @@ public class createquitmessage implements CommandExecutor {
                         for (String s : args) {
                             out += s + " ";
                         }
-                        String playerMessage = out.replace("&", "§").replace("@p", p.getDisplayName());
-                        p.sendMessage("Die quit Message ist jetzt: " + playerMessage);
+                        if (out.trim().equalsIgnoreCase("null")) {
+                            p.sendMessage("Die quit Message wird nicht angezeigt");
+                        } else {
+                            String playerMessage = out.replace("&", "§").replace("@p", p.getDisplayName());
+                            p.sendMessage("Die quit Message ist jetzt: " + playerMessage);
+                        }
+
                         writer.write(out);
                         writer.close();
                     } catch (Exception e) {
