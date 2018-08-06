@@ -18,7 +18,7 @@ public class createquitmessage implements CommandExecutor {
 
         if (sender instanceof Player) {
             Player p = (Player) sender;
-            if (PermissionsEx.getUser(p).has("joinQuittMessage.commands")) {
+            if (PermissionsEx.getUser(p).has("joinQuitMessage.commands")) {
                 if (label.equalsIgnoreCase("createquitmessage") || label.equalsIgnoreCase("cqm")) {
                     // args in datei speichern
                     String path = System.getProperty("user.dir");

@@ -19,7 +19,7 @@ public class createjoinmessage implements CommandExecutor {
 
         if (sender instanceof Player) {
             Player p = (Player) sender;
-            if (PermissionsEx.getUser(p).has("joinQuittMessage.commands")) {
+            if (PermissionsEx.getUser(p).has("joinQuitMessage.commands")) {
                 if (label.equalsIgnoreCase("createjoinmessage")  || label.equalsIgnoreCase("cjm")) {
                     // args in datei speichern
                     String path = System.getProperty("user.dir");
